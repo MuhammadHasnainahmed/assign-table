@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Table</title>
+</head>
+<body>
+    
+    <!-- list item links -->
+
+     <ul>
+         <a href="/index.html"><li>Table1</li></a>
+         <br>
+         <a href="#"><li>Table2</li></a>
+         <br>
+         <a href="/table 3.html"><li>Table3</li></a>
+         <br>
+         <a href="/table 4.html"><li>Table4</li></a>
+         <br>
+         <a href="/table 5.html"><li>Table5</li></a>
+         <br>
+         <a href="/table 6.html"><li>Table6</li></a>
+         
+         
+        </ul>
+        
+        <center>
+        <h1>Nested Table</h1>
+        <table border="1">
+            <!-- 1 -->
+            <tr>
+                <th>Header column 1</th>
+                <th>Header column 2</th>
+                <th>Header column 3</th>
+                <th>Header column 4</th>
+            </tr>
+            
+            <!-- 2 -->
+
+            <tr>
+                <td rowspan="1">Row 2 - Item 1</td>
+                <td rowspan="1">Row 2 - Item 2</td>
+                <td rowspan="2">
+                    Row 2: Nested Table 1
+                    <table border="1">
+                        <tr>
+                            <td>Row 1 Header</td>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2 Header</td>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <td>Row 3 Header</td>
+                            <td>item</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Row 2 - Item 4<br>A second line</td>
+            </tr>
+            <!-- 3 -->
+
+            <tr>
+                <td>
+                    Row 3: Nested Table 2
+                    <table border="1">
+                        <tr>
+                            <td>Row 1 Header</td>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <td>Row 2 Header</td>
+                            <td>item</td>
+                        </tr>
+                    </table>
+                </td>
+                
+                <td >Row 3 - Item 2</td>
+                <td rowspan="2" >Row 3 - Item 3</td>
+                
+            </tr>
+
+
+            <tr>
+                <td>Row 4 - Item 1</td>
+                <td>Row 4 - Item 1</td>
+                <td>Row 4 - Item 1</td>
+                
+            </tr>
+            <tr>
+                <td>Row 4 - Item 3</td>
+                <td colspan="4">Row 5 - Last row of outer table</td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
